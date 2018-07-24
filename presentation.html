@@ -6,13 +6,33 @@
     <link rel="stylesheet" href="https://use.typekit.net/bsg5ydy.css">
     <link rel="stylesheet" type="text/css" href="css/slide.css" />
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,700|Poppins" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
 
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <script>document.documentElement.className = 'js';</script>
     <title>Presentation</title>
 </head>
 <body>
-<main>
 
+<nav class="navbar navbar-expand-sm navbar-light bg-white fixed-top">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav justify-content-center">
+            <a class="nav-item nav-link" href="index.html">Accueil</a>
+            <a class="nav-item nav-link active" href="presentation.html">Présentation</a>
+            <a class="nav-item nav-link" href="services.html">Services</a>
+            <a class="nav-item nav-link" href="produits.html">Produits</a>
+            <a class="nav-item nav-link" href="ref.html">Références</a>
+            <a class="nav-item nav-link" href="contact.html">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<main>
     <div class="slideshow">
         <div class="slide">
             <div class="slide__img-wrap">
@@ -63,11 +83,16 @@
 
     </div>
 </main>
+
+
 <div class="loader">
     <div class="loader__inner"></div>
 </div>
 <script src="js/imagesloaded.pkgd.min.js"></script>
 <script src="js/TweenMax.min.js"></script>
 <script src="js/slide.js"></script>
+<!--JavaScript at end of body for optimized loading-->
+<script src="js/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
 </html>
