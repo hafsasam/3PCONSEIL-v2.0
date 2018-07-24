@@ -1,0 +1,205 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot');
+	src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.svg#icomoon') format('svg'),
+		url('../fonts/icomoon.woff') format('woff'),
+		url('../fonts/icomoon.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Needed for a fluid height: */
+html, body, .container, .main { height: 100vh;}
+
+/* main wrapper */
+.cbp-contentslider {
+	width: 100%;
+	height: 100%;
+	margin: 1em auto;
+	position: relative;
+	border: 4px solid #017155;
+}
+
+.cbp-contentslider > ul {
+	list-style: none;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	padding: 0;
+	margin: 0;
+}
+
+.cbp-contentslider > ul li {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	padding: 1em;
+	background: #fff;
+}
+
+/* Whithout JS, we use :target */
+.cbp-contentslider > ul li:target {
+	z-index: 100;
+}
+
+.cbp-contentslider nav {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 3.313em;
+	z-index: 1000;
+	border-top: 4px solid #017155;
+	overflow: hidden;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.cbp-contentslider nav a {
+	float: left;
+	display: block;
+	width: 100%;
+	height: 100%;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+	overflow: hidden;
+	color: #017155;
+	background: #fff;
+	outline: none;
+	text-align: center;
+	line-height: 3;
+	position: relative;
+	padding-left: 3.125em;
+	text-transform: uppercase;
+	border-right: 4px solid #017155;
+	-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+	-moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.cbp-contentslider nav a span {
+	display: block;
+	text-align: center;
+}
+
+.cbp-contentslider nav a:last-child {
+	border: none;
+}
+
+.cbp-contentslider nav a:hover {
+	background-color: #017155;
+	color: #fff;
+}
+
+.cbp-contentslider nav a.rc-active {
+	background-color: #017155;
+	color: #fff;
+}
+
+.cbp-contentslider h3 {
+	font-size: 3em;
+	min-height: 2em;
+	line-height: 1.2;
+	font-weight: 300;
+	margin: 0 0 0.3em;
+	position: relative;
+	color: #017155;
+	text-transform: uppercase;
+	text-align: right;
+	letter-spacing: 0.3em;
+	padding: 0 0.2em 0 0;
+	border-bottom: 4px solid #017155;
+}
+
+#slide3 .cbp-content {
+	margin-top: 5em;
+}
+
+.cbp-contentslider li > div {
+	position: absolute;
+	top: 9em;
+	bottom: 3.313em;
+	width: 100%;
+	left: 0;
+	padding: 0 1em;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.cbp-contentslider .cbp-content {
+	-webkit-column-rule: 1px dashed #017155;
+	-moz-column-rule: 1px dashed #017155;
+	column-rule: 1px dashed #017155;
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+	-o-column-count: 2;
+	column-count: 2;
+	-webkit-column-gap: 1em;
+	-moz-column-gap: 1em;
+	-o-column-gap: 1em;
+	column-gap: 1em;
+	vertical-align: top;	
+	padding: 1em 0;
+}
+
+.cbp-contentslider p {
+	color: #017155;
+	padding: 0 0.5em 0.4em;
+	margin: 0;
+	font-size: 1.2em;
+	font-weight: 300;
+	text-align: justify;
+	line-height: 1.6;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 70em) { 
+	.cbp-contentslider p {
+		font-size: 100%;
+	}
+}
+
+@media screen and (max-width: 67.75em) {
+
+	.cbp-contentslider { font-size: 85%; }
+
+	.cbp-contentslider nav a[class^="icon-"]:before, 
+	.cbp-contentslider nav a[class*=" icon-"]:before {
+		left: 50%;
+		margin-left: -1.250em;
+	}
+
+	.cbp-contentslider nav a span {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 43em) {
+
+	.cbp-contentslider h3 {
+		font-size: 1.6em;
+	}
+
+	.cbp-contentslider .cbp-content {
+		-webkit-column-count: 1;
+		-moz-column-count: 1;
+		-o-column-count: 1;
+		column-count: 1;
+	}
+
+	.cbp-contentslider li > div {
+		top: 6em;
+	}
+
+}
+
+@media screen and (max-width: 25em) { 
+	.cbp-contentslider nav a { padding: 0;}
+
+}
