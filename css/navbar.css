@@ -1,0 +1,12 @@
+
+.navbar-nav {
+    float:none;
+    margin:0 auto;
+    display: block;
+    text-align: center;
+}
+
+.navbar-nav > a {
+    display: inline-block;
+    float:none;
+}
