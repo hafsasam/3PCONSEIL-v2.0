@@ -18,6 +18,14 @@ body {
     width: 40em;
 }
 
+.desc {
+    max-width: 150vh;
+    font-size: 1.5em;
+    color: #E6E6E6;
+    background-color: #017155;
+    padding: 0.35em;
+}
+
 /* Color schemes */
 
 .demo-4 {
