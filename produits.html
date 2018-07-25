@@ -14,6 +14,14 @@
     <title>Produits</title>
 </head>
 <body>
+
+<script type="text/javascript">
+    jQuery("body").prepend('<div class="loader"><div class="loader__inner"></div></div>');
+    jQuery(document).ready(function() {
+        jQuery(".loader").remove();
+    });
+</script>
+
 <nav class="navbar navbar-expand-sm navbar-light bg-transparent">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
