@@ -34,13 +34,16 @@
 <div class="container">
 
 
-    <form class="form" netlify>
+    <form class="form" name="contact" method="POST" netlify>
         <h2>Nous contacter</h2>
-        <input type="text" placeholder="Votre nom.." required>
-        <input type="email" placeholder="Votre email.." required>
-        <input type="number" placeholder="Votre téléphone.." required>
-        <textarea required>Votre message..</textarea>
+
+            <label>Votre Nom: <input type="text" name="name" required/></label>
+            <label>Votre Email: <input type="email" name="email" required/></label>
+            <label>Votre Tél: <input type="number" required></label>
+            <label>Message: <textarea name="message"></textarea></label>
+
         <button type="submit">Envoyer le message</button>
+
         <div class="ribbon">
             <span class="fa fa-phone"></span>/<span class="fas fa-fax"></span> <span>+212 5 37 56 62 22</span> <br>
             <span class="fas fa-at"></span> <span>contact@3pconseil.ma</span> <br>
