@@ -216,7 +216,8 @@ main {
 
 	.content--intro .content__inner,
 	.demo-4 .content__inner {
-		padding-top: 12em;
+		padding-top: 6em;
+		overflow: auto;
 	}
 	.content__title {
 		font-size: 2em;
@@ -225,4 +226,15 @@ main {
     .logoL {
         width: 15em;
     }
+
+	.desc {
+		width: 96vw;
+		max-height: 95vw;
+		margin: 2vw;
+		overflow: auto;
+	}
+	.explore {
+		margin: 2vw;
+	}
+
 }
