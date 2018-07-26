@@ -136,7 +136,7 @@ main {
 }
 
 .content--intro .content__inner {
-	background: var(--color-content);
+	background: #E6E6E6;
 }
 
 .content h2 {
@@ -153,7 +153,7 @@ main {
 	height: 100vh;
 	width: 100%;
 	display: block;
-	fill: var(--color-content);
+	fill: #E6E6E6;
 }
 
 .content__title {
