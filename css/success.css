@@ -1,0 +1,88 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    min-height: 100vh;
+    color: #57585c;
+    color: var(--color-text);
+    background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.logoL {
+    width: 40em;
+}
+
+.demo-4 {
+    --color-text: #42213D;
+    --color-link: #C2C1C2;
+    --color-link-hover: #fff;
+    --color-enter: #4F518C;
+    --color-title: #017155;
+    --color-subtitle: #C2C1C2;
+    --color-content: #1c1b1b;
+    --font-alt: 400 5vw/1 'Poppins', serif;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+
+.content__inner {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #E6E6E6;
+}
+
+.content h2 {
+    margin: 1em;
+    font-size: 2em;
+}
+
+.explore {
+    margin: 3vh 0 0 0;
+    font-size: 1em;
+    letter-spacing: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    white-space: pre;
+    pointer-events: auto;
+    background: var(--color-subtitle);
+    color: var(--color-title);
+    padding: 0.5em 1em;
+}
+
+.explore:hover,
+.explore:focus {
+    background: var(--color-text);
+}
+
+@media screen and (max-width: 50em) {
+
+
+
+    .logoL {
+        width: 17em;
+    }
+
+    .explore {
+        margin: 2vw;
+        font-size: .7em;
+    }
+
+
+}

@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="css/navbar.css" />
     <link rel="stylesheet" type="text/css" href="css/contact.css" />
     <link rel="stylesheet" type="text/css" href="css/submit.css" />
+    <link rel="stylesheet" type="text/css" href="css/footer.css" />
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,700|Poppins" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
@@ -34,8 +35,7 @@
 
 <div class="container">
 
-
-    <form class="form" name="contact" method="POST" netlify>
+    <form class="form" name="contact" action="success.html" method="POST" netlify>
         <h2>Nous contacter</h2>
 
             <label>Votre Nom: <input type="text" name="name" required/></label>
@@ -60,6 +60,21 @@
 
     <div id="map"></div>
 </div>
+
+<footer>
+    <div class="inner">
+        <div id="text"><span id="copyr">Copyright © 3P CONSEIL</span></div>
+
+        <img class="logoF" src="img/logo-footer.png">
+
+        <div id="links">
+            <a href="https://www.linkedin.com/company/3p-conseil/"><i class="fab fa-linkedin fa-lg social"></i></a>
+            <a href="https://twitter.com/3P_Conseil"><i class="fab fa-twitter-square fa-lg social"></i></a>
+        </div>
+    </div>
+</footer>
+
+
 <script>
     // Initialize and add the map
     function initMap() {
