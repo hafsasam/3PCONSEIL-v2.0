@@ -41,6 +41,15 @@ footer {
     margin-left: -5em;
 }
 
+a {
+    color: #f0f0f0;
+    text-decoration: none;
+    outline: none;
+}
+
+a:hover {
+    color: #42213D;
+}
 
 @media screen and (max-width: 50em){
     .inner {
