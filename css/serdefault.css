@@ -33,6 +33,10 @@ a:hover {
 	color: #000;
 }
 
+.container {
+	margin-bottom: 2em;
+}
+
 .container > header {
 	width: 90%;
 	max-width: 69em;
