@@ -21,13 +21,22 @@ header h1 {
 
 }
 
-/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
+.container {
+    margin: 5rem auto;
 }
 
-.clearfix:after {
-    clear: both;
+.container img {
+    width: 22vh;
+    margin: 1rem;
+}
+
+.container a:hover {
+    opacity: .6;
+}
+
+@media screen and (max-width: 50em) {
+    .container img {
+        width: 15vh;
+        margin: 1rem;
+    }
 }
